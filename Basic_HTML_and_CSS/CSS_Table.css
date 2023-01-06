@@ -1,0 +1,9 @@
+table {
+	background-color: blue;
+	color: fuchsia;
+	border: 1px solid silver;
+}
+td:hover {
+	background-color: yellow;
+	color: black;
+}
