@@ -1,0 +1,11 @@
+h1 {
+    font-family: "Times New Roman", sans-serif;
+    font-size: large
+}
+
+h1 {
+    width: 300px;
+    margin: center;
+    border: 2px solid black;
+    border-radius: 0;
+}
