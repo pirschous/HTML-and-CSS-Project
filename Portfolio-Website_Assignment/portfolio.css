@@ -203,6 +203,11 @@ footer {
 
 .mySlides {
     display: none; /* This prevents the images from being displayed, we will use JS to display these */
+    transition: opacity is ease;
+}
+
+.mySlides.fade {
+    opacity: 1;
 }
 
 /* Slideshow section / container */
@@ -233,13 +238,15 @@ footer {
     position: absolute; /* This makes the next and previous buttons positioned relative to the slideshow container */
     top: 50%; /* this moves the buttons up in the slideshow container */
     width: auto; /* The width of the buttons is automatically adjusted based on the content */
-    padding: 2vw; /* Adds padding equal to 2% of the viewport width */
+    margin-top: -22px;
+    padding: 16px; /* Adds padding equal to 2% of the viewport width */
     color: darkgray;
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 18px;
     border-radius: 0 3px 3px 0; /*Adds a slightly rounded border on the top and bottom right corners */
     user-select: none; /* This property makes it so that the user cannot highlight the text */
     transition: 0.6s ease; /* This specifies the details of the hover transition for these elements */
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Positioning  the next button on the right hand side */
@@ -266,6 +273,10 @@ footer {
     background-color: rgba(0, 0, 0, .75); /* Gives a slightly transparent black background */
     font-weight: bold;
     border-radius: 0px 0px 7px 7px; /* Gives the text background rounded corners on the bottom left and right corners */
+}
+
+.dot-container {
+    text-align: center;
 }
 
 /* Styling of the dots under the slideshow */
@@ -370,6 +381,25 @@ box-sizing: border-box; /* this creates a box with a border within which wwe wil
     position: fixed; /* The form stays in the same location no matter what */
     bottom: .5vw; /*Slightly up from the bottom of the page */
     right: .5vw; /* Slightly in from the right side of the viewport */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1;
+    font-family: Arial, sans-serif;
+}
+
+.form-popup input[type="text"],
+.form-popup textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 /* Form styling */
