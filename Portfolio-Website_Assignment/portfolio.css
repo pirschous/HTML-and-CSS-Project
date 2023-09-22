@@ -28,7 +28,7 @@ h1 {
     font-family: Merriweather, "Open Sans"; /* Sets the font family of all h1 headings */
     text-align: center; /* Centering all h1 elemnents */
     margin-top: 3%; /* Adds a small margin above h1 elements */
-    color: #1a1a1a;
+    color: #cd00cd;
 }
 
 /* Heading 1 element hover effect */
